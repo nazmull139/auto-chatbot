@@ -13,7 +13,7 @@ const createChatli = (message , classname) =>{
   chatli.classList.add("chat" , classname);
   
   let  liContent = classname ==="outgoing" ? `<p>${message}</p>`:  `<span class="material-symbols-outlined"><i class="fa-solid fa-robot"></i></span> <p>${message}</p>`;
-   /* 
+  
   if ( classname === "outgoing"){
     
     liContent = `<p>${message}</p>`;
@@ -26,7 +26,7 @@ const createChatli = (message , classname) =>{
 
     liContent =  `<span class="material-symbols-outlined"><i class="fa-solid fa-robot"></i></span> <p> </p>` ;
   }
-*/
+
  chatli.innerHTML =  liContent ;
  return chatli;
 }
